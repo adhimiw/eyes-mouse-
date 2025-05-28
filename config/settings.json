@@ -1,0 +1,56 @@
+{
+    "tracking": {
+        "sensitivity": 1.2,
+        "smoothing": 0.3,
+        "dead_zone_radius": 5,
+        "acceleration_curve": "linear",
+        "frame_rate": 20,
+        "tracking_quality_threshold": 0.4
+    },
+    "gestures": {
+        "blink_threshold": 0.008,
+        "double_blink_timeout": 0.8,
+        "long_blink_duration": 1.5,
+        "dwell_time": 2.0,
+        "gesture_cooldown": 1.0,
+        "wink_threshold": 0.006,
+        "wink_cooldown": 1.5,
+        "head_tilt_threshold": 25.0,
+        "head_tilt_cooldown": 2.0,
+        "intentional_blink_duration": 0.3,
+        "max_blink_duration": 0.8,
+        "enable_wink_clicks": true,
+        "enable_head_tilt_scroll": false,
+        "enable_dwell_click": true
+    },
+    "display": {
+        "show_overlay": true,
+        "show_eye_tracking": true,
+        "overlay_opacity": 0.8,
+        "cursor_trail": true,
+        "visual_feedback": true
+    },
+    "streaming": {
+        "auto_detect_platforms": true,
+        "netflix_optimizations": true,
+        "youtube_optimizations": true,
+        "hotstar_optimizations": true,
+        "auto_pause_timeout": 10.0
+    },
+    "accessibility": {
+        "break_reminders": true,
+        "break_interval": 900,
+        "fatigue_detection": true,
+        "emergency_disable_key": "ctrl+shift+e"
+    },
+    "performance": {
+        "max_cpu_usage": 15.0,
+        "max_memory_mb": 200,
+        "adaptive_quality": true,
+        "low_latency_mode": true
+    },
+    "test": {
+        "value": 123,
+        "verification": 42
+    }
+}

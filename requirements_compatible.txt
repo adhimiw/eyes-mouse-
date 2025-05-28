@@ -1,0 +1,25 @@
+# Compatible Requirements for Eye-Controlled Interface
+# Specifically tested for NumPy 1.x compatibility
+
+# NumPy - MUST be < 2.0 for compatibility with OpenCV and MediaPipe
+numpy>=1.21.0,<2.0.0
+
+# Core computer vision and eye tracking
+opencv-python==4.8.1.78
+mediapipe==0.10.7
+
+# System control and automation
+pyautogui==0.9.54
+pynput>=1.7.0
+
+# Image processing and utilities
+Pillow>=9.0.0,<11.0.0
+screeninfo>=0.8.0
+
+# System monitoring and performance
+psutil>=5.8.0
+
+# Additional dependencies for specific features
+# (install these manually if needed)
+# python3-tkinter  # Install via: sudo dnf install python3-tkinter
+# v4l-utils        # Install via: sudo dnf install v4l-utils

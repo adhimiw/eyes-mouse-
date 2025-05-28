@@ -1,0 +1,38 @@
+# VERIFIED Compatible Requirements for Eye-Controlled Interface
+# Updated February 2025 - RESEARCH VERIFIED from PyPI, GitHub, and Google AI docs
+
+# VERIFIED FACT: MediaPipe 0.10.21 (Feb 6, 2025) REQUIRES NumPy < 2.0
+# Source: PyPI package info, GitHub issues #5612 & #5676
+# Constraint added in v0.10.15 due to "packet propagation issues with numpy 2.0"
+numpy>=1.24.0,<2.0.0
+
+# OpenCV - Latest version (supports NumPy 2.0 but we use 1.x for MediaPipe compatibility)
+# Verified: OpenCV 4.8+ supports both NumPy 1.x and 2.x
+opencv-python>=4.8.0
+
+# MediaPipe - Latest version (0.10.21 released Feb 6, 2025)
+# Verified: Supports Python 3.9, 3.10, 3.11, 3.12 but REQUIRES NumPy < 2.0
+# Status: NumPy 2.0 support timeline unknown
+mediapipe==0.10.21
+
+# System control and automation - Latest stable versions
+pyautogui>=0.9.54
+pynput>=1.7.6
+
+# Image processing and utilities - Latest versions
+Pillow>=10.0.0
+screeninfo>=0.8.1
+
+# System monitoring and performance - Latest versions
+psutil>=5.9.0
+
+# Optional: Additional useful packages for development
+matplotlib>=3.7.0
+scipy>=1.10.0
+
+# IMPORTANT NOTES (February 2025):
+# 1. MediaPipe 0.10.21 is the latest version (released Feb 6, 2025)
+# 2. MediaPipe STILL requires NumPy < 2.0 (this constraint was added in v0.10.15)
+# 3. OpenCV supports NumPy 2.0 but we must use NumPy 1.x for MediaPipe compatibility
+# 4. Python 3.10 is recommended for best compatibility
+# 5. Use virtual environment to avoid conflicts with system packages
